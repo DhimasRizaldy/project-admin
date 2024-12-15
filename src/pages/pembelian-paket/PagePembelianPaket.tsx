@@ -1,9 +1,9 @@
 import { Layout } from "@/layouts/layout";
 import { Breadcrumb } from "@/components/breadcrumb";
+import PembelianPaket from "@/content/PembelianPaket";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { NavUser } from "@/components/nav-user";
-import { Dashboard } from "@/content/Dashboard";
 
 const data = {
   user: {
@@ -13,7 +13,7 @@ const data = {
   },
 };
 
-export default function PageDashboardUser() {
+export default function PagePembelianPaket() {
   return (
     <Layout>
       <header className="flex h-16 shrink-0 items-center gap-2 border-b transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
@@ -26,7 +26,7 @@ export default function PageDashboardUser() {
           <NavUser user={data.user} />
         </div>
       </header>
-      <Dashboard />
+      <PembelianPaket />
     </Layout>
   );
 }

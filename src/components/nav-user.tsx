@@ -1,10 +1,7 @@
 "use client";
 
-import {
-  ChevronsUpDown,
-  LogOut,
-  Users,
-} from "lucide-react";
+import { Link } from "react-router-dom";
+import { ChevronsUpDown, LogOut, Users } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -33,6 +30,11 @@ export function NavUser({
   };
 }) {
   const { isMobile } = useSidebar();
+
+  const handleLogout = () => {
+    // Implementasi fungsi logout di sini
+    console.log("User logged out");
+  };
 
   return (
     <SidebarMenu>
@@ -72,16 +74,22 @@ export function NavUser({
             </DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <Users />
-                Profile
+              <DropdownMenuItem asChild>
+                <Link to="/profile" className="flex items-center gap-2">
+                  <Users />
+                  Profile
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <LogOut />
-              Log out
-            </DropdownMenuItem>
+            <DropdownMenuGroup>
+              <DropdownMenuItem asChild>
+                <Link to="/" className="flex items-center gap-2">
+                  <LogOut />
+                  Keluar
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>

@@ -50,7 +50,7 @@ const mainNavItems: NavItem[] = [
     title: "Paket Pembelian",
     url: "/paket-pembelian",
     icon: ShoppingBag,
-    badge: "43",
+    badge: "2",
   },
   {
     title: "Bantuan",
@@ -61,6 +61,7 @@ const mainNavItems: NavItem[] = [
     title: "Event",
     url: "/event",
     icon: Calendar,
+    badge: "4",
   },
 ];
 

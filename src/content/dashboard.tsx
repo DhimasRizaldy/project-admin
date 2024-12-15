@@ -11,7 +11,7 @@ const stats = [
   },
   {
     label: "Paket Tersedia",
-    value: "43",
+    value: "15",
     icon: ClipboardList,
     color: "bg-cyan-500",
   },
@@ -23,13 +23,13 @@ const stats = [
   },
   {
     label: "Riwayat Pembelian",
-    value: "9",
+    value: "2",
     icon: Building2,
     color: "bg-cyan-500",
   },
 ];
 
-export function Content() {
+export function Dashboard() {
   return (
     <div className="flex flex-1 flex-col gap-4 p-4">
       {/* Hero Banner */}
