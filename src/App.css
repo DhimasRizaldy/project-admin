@@ -1,0 +1,24 @@
+:root {
+  --transition-speed: 300ms;
+}
+
+dark {
+  background-color: #1a202c;
+  color: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+}
